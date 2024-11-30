@@ -4,6 +4,8 @@ Ez a könyvtár egy PDO-alapú PHP osztály, amely lehetővé teszi egyszerű é
 
 ## Telepítés
 
+### GitHub-ról:
+
 1. Klónozd a projektet vagy töltsd le a forráskódot a GitHubról:
    ```bash
    git clone https://github.com/your-repo/sosoricsi-query.git
@@ -13,14 +15,25 @@ Ez a könyvtár egy PDO-alapú PHP osztály, amely lehetővé teszi egyszerű é
    require_once 'path/to/Db.php';
    ```
 
+### Composerrel:
+
+1. Telepítsd a csomagot:
+```bash
+composer require sosoricsi/query
+```
+
+2. Importáld a kódba:
+```php
+require 'path/to/vendor/autoload.php';
+use SosoRicsi\Query\Db;
+```
+
 ## Használat
 
 ### Adatbázis kapcsolat beállítása
 Az adatbázis kapcsolat beállításához és létrehozásához az alábbi metódusokat használd:
 
 ```php
-use SosoRicsi\Query\Db;
-
 $db = new Db();
 $db->setDatabase('localhost', 'username', 'password', 'mysql');
 $db->connect('adatbazis_nev');
