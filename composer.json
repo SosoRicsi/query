@@ -1,0 +1,16 @@
+{
+    "name": "sosoricsi/query",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SosoRicsi\\Query\\": "code/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jarkó Richárd",
+            "email": "jarkoricsi16@gmail.com"
+        }
+    ],
+    "require": {}
+}
